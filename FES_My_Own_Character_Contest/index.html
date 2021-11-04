@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>아기 하마</title>
+        <style>
+            .container {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .face {
+                width: 380px;
+                height: 300px;
+                border-radius: 45% 45% 40px 40px;
+                background-color: #797091;
+                box-shadow: 0px 24px 58px -30px rgba(255, 255, 255, 0.5) inset;
+                position: relative;
+            }
+
+            .face::before {
+                content: "";
+                width: 420px;
+                height: 140px;
+                border-radius: 40px 40px 60px 60px;
+                background-color: #e2becc;
+                box-shadow: 0px -50px 50px -30px #a88c97 inset;
+                position: absolute;
+                bottom: 0;
+                left: -20px;
+            }
+
+            .ear {
+                width: 400px;
+                height: 60px;
+                border-radius: 10px 10px 60px 60px;
+                background-color: #e2becc;
+                position: absolute;
+                top: 10px;
+                left: -10px;
+                z-index: -1;
+            }
+
+            .ear::before {
+                content: "";
+                display: block;
+                width: 370px;
+                height: 40px;
+                border-radius: 0px 0px 40px 40px;
+                background-color: #797091;
+                box-shadow: 0px 5px 7px 3px #a88c97;
+                position: absolute;
+                left: 15px;
+            }
+
+            .eye {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: black;
+                box-shadow: 0px -20px 50px -35px rgba(255, 255, 255, 0.5) inset;
+                position: absolute;
+                top: 60px;
+            }
+
+            .eye.left {
+                left: 90px;
+            }
+
+            .eye.right {
+                right: 90px;
+            }
+
+            .eye::before {
+                content: "";
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: white;
+                position: absolute;
+                top: 4px;
+                left: 12px;
+            }
+
+            .mouth {
+                width: 180px;
+                height: 170px;
+                border-radius: 40px 40px 60px 60px;
+                background-color: #797091;
+                box-shadow: 0px -50px 50px -20px rgba(59, 55, 77, 1) inset;
+                position: absolute;
+                bottom: -10px;
+                left: 100px;
+            }
+
+            .mouth::after {
+                content: "";
+                display: block;
+                width: 180px;
+                height: 140px;
+                border-radius: 40px 40px 40px 40px;
+                border-bottom: 5px solid black;
+            }
+
+            .nose {
+                width: 35px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: black;
+                position: absolute;
+                top: 30px;
+            }
+
+            .nose.left {
+                left: 45px;
+                transform: rotate(30deg);
+            }
+
+            .nose.right {
+                right: 45px;
+                transform: rotate(-30deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="face">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="mouth">
+                    <div class="nose left"></div>
+                    <div class="nose right"></div>
+                </div>
+                <div class="ear"></div>
+            </div>
+        </div>
+    </body>
+</html>
