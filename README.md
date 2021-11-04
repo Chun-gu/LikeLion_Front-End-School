@@ -10,5 +10,5 @@
 
 ## CSS
 ### 제1회 자신만의 캐릭터 그리기 경진대회
-* <https://chun-gu.github.io/LikeLion_Front-End-School/FES_My_Own_Character_Contest/   
-4일차에 학습한 CSS 지식을 바탕으로 캐릭터를 그리는 대회에 
+* https://chun-gu.github.io/LikeLion_Front-End-School/FES_My_Own_Character_Contest/   
+4일차에 학습한 CSS 지식을 바탕으로 캐릭터를 그리는 대회에 출품
