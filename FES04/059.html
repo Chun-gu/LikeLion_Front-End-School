@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>transform</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            div {
+                width: 200px;
+                height: 100px;
+                background: chocolate;
+                border: 5px solid yellow;
+                border-radius: 30px;
+                line-height: 80px;
+                text-align: center;
+                color: white;
+                font-size: 28px;
+                transition: all 1s;
+            }
+            .one:hover {
+                background: teal;
+                transform: rotate(90deg) scale(1.2);
+            }
+            .two:hover {
+                transform: translate(100px, 100px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="one">눌러</div>
+        <div class="two">눌러</div>
+    </body>
+</html>

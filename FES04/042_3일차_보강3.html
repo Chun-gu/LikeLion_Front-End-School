@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /* 우선순위 110점 */
+            #one .two {
+                color: red;
+            }
+            /* 우선순위 : 111 */
+            #one .two h3 {
+                color: red;
+            }
+            /* 우선순위: 10점 */
+            .two {
+                color: blue;
+            }
+            /* 우선순위: 1점 */
+            h3 {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="one">
+            <div class="two">
+                <h3>hello world</h3>
+            </div>
+        </div>
+    </body>
+</html>
