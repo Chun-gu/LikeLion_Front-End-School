@@ -1,0 +1,46 @@
+@import "./reset.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Header */
+.utils button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.utils button:hover {
+    background-color: #eeeeee;
+}
+.utils button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Main */
+
+/* Footer */
+.footer__top strong:hover::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(255, 187, 0);
+    position: absolute;
+    left: -10px;
+}
