@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>flex-basis</title>
+        <link rel="stylesheet" href="../reset.css" />
+        <style>
+            .container {
+                display: flex;
+                /* flex-direction: column; */
+            }
+            .item {
+                width: 400px;
+                height: 100px;
+                background-color: pink;
+                border: 1px solid black;
+                /* 메인축 방향으로 요소의 너비를 정함 */
+                flex-basis: 100px;
+                flex-grow: 1;
+            }
+            .item:nth-child(2) {
+                flex-shrink: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item"></div>
+            <div class="item">Lorem ipsum dolor sit amet.</div>
+            <div class="item"></div>
+        </div>
+    </body>
+</html>

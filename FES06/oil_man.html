@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../reset.css" />
+        <style>
+            @keyframes roll {
+                0% {
+                    transform: translateY(0);
+                }
+                33% {
+                    transform: translateY(-25%);
+                }
+                66% {
+                    transform: translateY(-50%);
+                }
+                100% {
+                    transform: translateY(-75%);
+                }
+            }
+            .balloon {
+                width: 200px;
+                height: 100px;
+                border-radius: 50%;
+                position: absolute;
+                left: 30px;
+                top: 50px;
+                background: white;
+                display: flex;
+                align-items: center;
+            }
+            .line {
+                width: 200px;
+                height: 30px;
+                line-height: 30px;
+                overflow: hidden;
+                text-align: center;
+            }
+            .line-list {
+                font-size: 20px;
+                animation: roll 6s infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="./oilman.png" alt="" />
+            <div class="balloon">
+                <div class="line">
+                    <ul class="line-list">
+                        <li>제발...그만해..!</li>
+                        <li>나! 나...무서워...</li>
+                        <li>이러다가는 다 죽어!!!</li>
+                        <li>제발...그만해..!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

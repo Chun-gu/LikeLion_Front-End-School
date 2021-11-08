@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>grid practice</title>
+        <link rel="stylesheet" href="../reset.css" />
+        <style>
+            ul {
+                display: grid;
+                width: 500px;
+                height: 500px;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                grid-gap: 10px;
+            }
+            li {
+                border: 1px solid black;
+            }
+            li img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            .first {
+                grid-column: 1/4;
+                grid-row: 1/3;
+            }
+            .second {
+                grid-column: 4/6;
+                grid-row: 1/4;
+            }
+            .third {
+                grid-column: 1/3;
+                grid-row: 3/4;
+            }
+            .fourth {
+                grid-column: 3/4;
+                grid-row: 3/4;
+            }
+            .fifth {
+                grid-column: 1/3;
+                grid-row: 4/6;
+            }
+            .sixth {
+                grid-column: 3/6;
+                grid-row: 4/6;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="first">
+                <img src="./image/1.jpg" alt="" />
+            </li>
+            <li class="second">
+                <img src="./image/6.jpg" alt="" />
+            </li>
+            <li class="third">
+                <img src="./image/2.jpg" alt="" />
+            </li>
+            <li class="fourth">
+                <img src="./image/5.webp" alt="" />
+            </li>
+            <li class="fifth">
+                <img src="./image/3.webp" alt="" />
+            </li>
+            <li class="sixth">
+                <img src="./image/4.jpg" alt="" />
+            </li>
+        </ul>
+    </body>
+</html>
