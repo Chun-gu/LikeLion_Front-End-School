@@ -16,4 +16,8 @@
 
 ### 과제(레이아웃 구현 프로젝트 - 2)
 * https://chun-gu.github.io/LikeLion_Front-End-School/FES_Assignment02/   
-레이아웃 구현 프로젝트 - 1에서 구현한 마크업에 CSS 적용 (진행중) 
+레이아웃 구현 프로젝트 - 1에서 구현한 마크업에 CSS 적용
+
+### 과제(1만시간의 법칙 반응형 웹 구현)
+* https://chun-gu.github.io/LikeLion_Front-End-School/FES_Assignment03/   
+피그마 시안을 참고해서 반응형으로 웹 구현하기 (진행 중)
