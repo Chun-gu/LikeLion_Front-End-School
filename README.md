@@ -20,7 +20,7 @@
 
 ### 과제 (1만시간의 법칙 반응형 웹 구현)
 * https://chun-gu.github.io/LikeLion_Front-End-School/FES_Assignment03/   
-피그마 시안을 참고해서 반응형으로 웹 구현하기 (320px 모바일 디바이스 타겟)
+피그마 시안을 참고해서 반응형으로 웹 구현하기 (360px 모바일 디바이스 대상)
 
 ### 과제 (위니브 로그인 클론)
 * https://chun-gu.github.io/LikeLion_Front-End-School/FES_Assignment04/   
