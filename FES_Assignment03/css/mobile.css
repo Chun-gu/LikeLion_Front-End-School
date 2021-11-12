@@ -1,0 +1,129 @@
+@media screen and (max-width: 360px) {
+    #app {
+        padding: 0 25px 32px;
+    }
+    .tit {
+        margin-top: 60px;
+    }
+    .tit::after {
+        width: 125px;
+        height: 125px;
+        background-size: 125px;
+    }
+
+    .tit__img {
+        width: 267px;
+    }
+    .sub-tit {
+        max-width: 297px;
+        margin: 69px auto 62px;
+    }
+
+    .desc {
+        width: 290px;
+        font-size: 14px;
+        line-height: 1.6;
+        position: relative;
+        margin: 0 auto 66px;
+        word-spacing: -2px;
+    }
+
+    .desc strong {
+        font-size: 16px;
+    }
+
+    .desc::before,
+    .desc::after {
+        width: 18px;
+        height: 15px;
+        background-size: 18px 15px;
+    }
+
+    .plan,
+    .result {
+        font-size: 14px;
+        line-height: 3;
+        word-spacing: -1px;
+    }
+
+    .plan__hours {
+        margin-bottom: 49px;
+    }
+
+    :is(.plan__subj, .plan__hours) input {
+        width: 150px;
+        height: 35px;
+        border: none;
+        border-radius: 7px;
+        font-size: 14px;
+        text-align: center;
+        margin: 0 4px;
+    }
+
+    .calc,
+    .train,
+    .share {
+        padding: 19px 36px;
+        font-family: "GmarketSansBold";
+        font-size: 14px;
+        line-height: 14px;
+        border-radius: 13px;
+        color: #5b2386;
+        background-color: #fcee21;
+        margin: 0;
+    }
+    .calc {
+        width: 240px;
+        margin-bottom: 64px;
+    }
+    .calc::after {
+        width: 43px;
+        height: 48px;
+        background-size: 43px;
+        bottom: -10px;
+        right: -45px;
+    }
+    .result {
+        line-height: 24px;
+        margin-bottom: 83px;
+    }
+    .result__subj {
+        margin-bottom: 15px;
+    }
+    .result__hours {
+        margin-bottom: 55px;
+    }
+    :is(.result__subj, .result__hours) strong {
+        font-size: 24px;
+    }
+
+    .train {
+        width: 185px;
+        padding: 13px 15px;
+        border-radius: 20px;
+    }
+    .share {
+        width: 92px;
+        padding: 13px 19px;
+        background-color: #ffffff;
+        margin-left: 12px;
+        border-radius: 20px;
+    }
+
+    footer {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .footer__comp {
+        width: 91px;
+        height: 18px;
+        margin: 0 auto 17px;
+    }
+
+    small {
+        display: block;
+        font-family: "Noto Sans KR";
+        font-size: 9px;
+    }
+}

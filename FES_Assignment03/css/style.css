@@ -27,12 +27,12 @@
 }
 
 .sr-only {
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
     overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
 }
 
 #app {
@@ -56,7 +56,7 @@
     background: url(../images/title_bg.png);
     width: 225px;
     height: 225px;
-    background-size: 225px;
+    background-position: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -71,15 +71,16 @@
 .sub-tit {
     display: block;
     max-width: 486px;
-    margin: 125px auto 78px;
+    margin: 125px auto 80px;
 }
 
 .desc {
-    width: 475px;
+    width: 479px;
     font-size: 18px;
-    line-height: 2;
+    line-height: 1.6;
     position: relative;
-    margin: 0 auto 102px;
+    margin: 0 auto 95px;
+    word-spacing: -2px;
 }
 
 strong {
@@ -97,8 +98,9 @@ strong {
     width: 37px;
     height: 32px;
     position: absolute;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%);
+    margin: 0 10px;
 }
 
 .desc::before {
@@ -118,7 +120,7 @@ strong {
 }
 
 .plan__hours {
-    margin-bottom: 115px;
+    margin-bottom: 85px;
 }
 
 :is(.plan__subj, .plan__hours) input {
@@ -155,8 +157,8 @@ strong {
     width: 64px;
     height: 72px;
     position: absolute;
-    top: 15px;
-    right: -85px;
+    bottom: -15px;
+    right: -65px;
 }
 
 .result {
@@ -174,7 +176,7 @@ strong {
 
 :is(.result__subj, .result__hours) strong {
     font-size: 72px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .share {
