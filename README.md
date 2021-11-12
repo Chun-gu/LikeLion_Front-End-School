@@ -14,10 +14,14 @@
 4일차에 학습한 CSS 지식을 바탕으로 캐릭터를 그리는 대회에 출품   
 ![image](https://user-images.githubusercontent.com/60649092/140461029-1fb27e4a-a7e0-43f8-b96e-d5c91c701c57.png)
 
-### 과제(레이아웃 구현 프로젝트 - 2)
+### 과제 (레이아웃 구현 프로젝트 - 2)
 * https://chun-gu.github.io/LikeLion_Front-End-School/FES_Assignment02/   
 레이아웃 구현 프로젝트 - 1에서 구현한 마크업에 CSS 적용
 
-### 과제(1만시간의 법칙 반응형 웹 구현)
+### 과제 (1만시간의 법칙 반응형 웹 구현)
 * https://chun-gu.github.io/LikeLion_Front-End-School/FES_Assignment03/   
-피그마 시안을 참고해서 반응형으로 웹 구현하기 (진행 중)
+피그마 시안을 참고해서 반응형으로 웹 구현하기 (320px 모바일 디바이스 타겟)
+
+### 과제 (위니브 로그인 클론)
+* https://chun-gu.github.io/LikeLion_Front-End-School/FES_Assignment04/   
+BEM 방법론 활용한 마크업과 피그마 시안에 맞춘 작업 실습
