@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "spoqa400";
+    src: url(../fonts/SpoqaHanSansNeo-Regular.ttf);
+}
+@font-face {
+    font-family: "spoqa500";
+    src: url(../fonts/SpoqaHanSansNeo-Medium.ttf);
+}
+@font-face {
+    font-family: "spoqa700";
+    src: url(../fonts/SpoqaHanSansNeo-Bold.ttf);
+}
+
+body {
+    font-family: "Spoqa400", sans-serif;
+}
+
+/* Utils */
+.sr-only {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.wrap {
+    width: 520px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+}
+
+.header {
+    padding: 20px 24px 20px;
+    border-bottom: 1px solid #c4c4c4;
+    font-family: "spoqa500";
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header__btn-close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+}
+
+.header__btn-close img {
+    width: 16px;
+    height: 16px;
+}
+
+.content {
+    padding: 26px 24px 25px;
+}
+
+.content__title {
+    display: block;
+    font-family: "spoqa700";
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.form-login__input-id,
+.form-login__input-password {
+    display: block;
+    width: 438px;
+    height: 50px;
+    padding: 0 16px;
+    margin-bottom: 10px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    font-family: "spoqa500";
+}
+
+:is(.form-login__input-id, .form-login__input-password)::placeholder {
+    font-family: "spoqa400";
+    color: #767676;
+    line-height: 20px;
+}
+
+.form-login__checkbox-keepLoggedIn {
+    display: none;
+}
+
+.form-login__checkbox-keepLoggedIn + label {
+    font-family: "spoqa500";
+    line-height: 20px;
+    color: #767676;
+    cursor: pointer;
+}
+
+.form-login__checkbox-keepLoggedIn + label::before {
+    content: "";
+    display: inline-block;
+    background: url(../images/unchecked-box.png);
+    width: 22px;
+    height: 22px;
+    background-size: 22px;
+    vertical-align: -6px;
+    margin: 0 8px 0 4px;
+}
+
+.form-login__checkbox-keepLoggedIn:checked + label::before {
+    background: url(../images/checked-box.png);
+    width: 22px;
+    height: 22px;
+    background-size: 22px;
+}
+
+.form-login__btn-submit {
+    width: 472px;
+    height: 50px;
+    background: #2f80ed;
+    border-radius: 5px;
+    font-family: "spoqa700";
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.submenu {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #767676;
+    margin-bottom: 30px;
+}
+
+.register::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    vertical-align: middle;
+    background: #767676;
+    margin: 0 8px 0 12px;
+}
+
+.alter {
+    font-size: 14px;
+    line-height: 17px;
+    color: #767676;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.alter::before,
+.alter::after {
+    content: "";
+    display: inline-block;
+    width: 210px;
+    height: 1px;
+    background: #767676;
+    vertical-align: 30%;
+}
+
+.alter > span {
+    margin: 0 13px;
+}
+
+.social-login a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 472px;
+    height: 50px;
+    font-family: "spoqa500";
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: #767676;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.social-login a img {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 11px;
+    left: 12px;
+}
+
+.social-login__google {
+    border: 1px solid #767676;
+}
+
+.social-login__facebook {
+    border: 1px solid #2d9cdb;
+}
+
+.social-login__naver {
+    border: 1px solid #00bf18;
+}
+
+.social-login__kakaotalk {
+    border: 1px solid #f2c94c;
+}
