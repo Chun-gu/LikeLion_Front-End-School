@@ -25,3 +25,7 @@
 ### 과제 (위니브 로그인 클론)
 * https://chun-gu.github.io/LikeLion_Front-End-School/FES_Assignment04/   
 BEM 방법론 활용한 마크업과 피그마 시안에 맞춘 작업 실습
+
+### Kakao Clone Study
+* https://chun-gu.github.io/LikeLion_Front-End-School/FES_kakao_clone   
+수강생들끼리 구성한 카카오 홈페이지 클론 스터디의 개인 
