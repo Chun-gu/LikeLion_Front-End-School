@@ -33,9 +33,9 @@
     -webkit-box-orient: vertical;
 }
 
-/* .hidden {
+.hidden {
     display: none;
-} */
+}
 
 /* Header */
 /* .header-top {} */
@@ -547,7 +547,14 @@
 .relation__info {
     float: left;
 }
-.relation__sites {
+.relation-wrap {
+    float: left;
+}
+:not(.relation-wrap:first-child) {
+    margin-left: 24px;
+}
+
+.relation__site {
     width: 208px;
     font-size: 12px;
     line-height: 18px;
@@ -556,7 +563,7 @@
     border-radius: 24px;
     float: right;
 }
-.relation__sites .fa-plus {
+.relation__site .fa-plus {
     font-size: 16px;
     line-height: 20px;
     color: #666666;
