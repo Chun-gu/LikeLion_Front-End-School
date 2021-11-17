@@ -467,6 +467,7 @@
     width: 260px;
     font-size: 18px;
     line-height: 60px;
+    font-weight: bold;
     text-align: center;
     background-color: #eeeeee;
     border-radius: 60px;
@@ -501,6 +502,7 @@
     padding: 0 0 48px;
     margin: 0 auto;
 }
+
 .service::after {
     content: "";
     display: block;
@@ -514,7 +516,6 @@
     font-size: 11px;
     vertical-align: 1px;
 }
-
 .service__title {
     display: block;
     position: relative;
@@ -532,7 +533,6 @@
     top: 8px;
     left: -15px;
 }
-
 .service__list li {
     color: #888888;
     margin-top: 12px;
@@ -542,6 +542,7 @@
 }
 
 .relation {
+    font-size: 12px;
     margin-top: 120px;
 }
 .relation__info {
@@ -549,9 +550,28 @@
 }
 .relation-wrap {
     float: left;
-}
-:not(.relation-wrap:first-child) {
+    color: #888888;
     margin-left: 24px;
+}
+.relation-wrap:first-child {
+    margin-left: 0;
+}
+.relation-wrap--em{
+    font-weight: bold;
+    color: #333333;
+}
+.relation-wrap .fa-chevron-down{
+    font-size: 9px;
+    vertical-align: 1px;
+    color: #888888;
+    margin-left: 4px;
+}
+.relation-wrap:hover{
+    color: #111111;
+}
+.relation-wrap:hover .fa-chevron-down{
+    color: #111111;
+    transform: rotate(180deg);
 }
 
 .relation__site {
@@ -569,7 +589,9 @@
     color: #666666;
     float: right;
 }
+
 .copyright {
+    letter-spacing: 0px;
     display: block;
     color: #888888;
     clear: both;
