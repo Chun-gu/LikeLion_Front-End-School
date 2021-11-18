@@ -37,20 +37,24 @@
                     </ul>
                 </nav>
                 <div class="utils">
-                    <button>
+                    <button class="utils__search">
                         <img src="./asset/icon/search.svg" alt="검색" />
                     </button>
-                    <button>
+                    <button class="utils__eng">
                         <img
                             src="./asset/icon/globe.svg"
                             alt="영문사이트 이동"
                         />
                     </button>
-                    <button>
+                    <button class="utils__theme">
                         <img
                             src="./asset/icon/moon.svg"
                             alt="다크모드 활성화"
                         />
+                    </button>
+                    <button class="utils__hamburger">
+                        <span class="sr-only">메인메뉴 열기</span>
+                        <i class="fas fa-hamburger"></i>
                     </button>
                 </div>
             </div>
@@ -60,7 +64,7 @@
             <section class="main-title">
                 <h2 class="main-title__txt">
                     <strong>오늘의 까까오</strong> <br />
-                    11월 7일 일요일 소식입니다
+                    11월 7일 일요일 소식<span class="hide-mobile">입니다</span>
                 </h2>
             </section>
             <section class="main-content" id="main-content">
@@ -290,7 +294,8 @@
                 <!-- 두번째 섹션 -->
                 <article class="content culture">
                     <strong class="culture__title"
-                        >기술과 사람으로 더 나은 세상을 만듭니다.</strong
+                        >기술과 사람으로<br class="break-line" />
+                        더 나은 세상을 만듭니다.</strong
                     >
                     <a href="#" class="culture__link"
                         >까까오문화 바로가기 <i class="fas fa-arrow-right"></i
@@ -599,7 +604,7 @@
                 <!-- // 네번째 섹션 -->
 
                 <a href="#none" class="collection-link">까까오 소식 모아보기</a>
-                <a href="#header-top" class="link-top">
+                <a href="#" class="link-top">
                     <span class="sr-only">페이지 최상단으로 이동하기</span>
                     <i class="fas fa-arrow-up"></i>
                 </a>
@@ -611,7 +616,7 @@
                 <section class="service">
                     <div class="service-wrap">
                         <strong class="service__title"
-                            ><a href="#none">까까오</a></strong
+                            ><a href="#none">까까오<i class="fas fa-chevron-down"></i></a></i></strong
                         >
                         <ul class="service__list">
                             <li><a href="#none">까까오 문화</a></li>
@@ -621,12 +626,12 @@
                     </div>
                     <div class="service-wrap">
                         <strong class="service__title"
-                            ><a href="#none">뉴스</a></strong
+                            ><a href="#none">뉴스<i class="fas fa-chevron-right"></i></a></strong
                         >
                     </div>
                     <div class="service-wrap">
                         <strong class="service__title"
-                            ><a href="#none">기술과 서비스</a></strong
+                            ><a href="#none">기술과 서비스<i class="fas fa-chevron-down"></i></a></strong
                         >
                         <ul class="service__list">
                             <li><a href="#none">기술</a></li>
@@ -635,7 +640,7 @@
                     </div>
                     <div class="service-wrap">
                         <strong class="service__title"
-                            ><a href="#none">약속과 책임</a></strong
+                            ><a href="#none">약속과 책임<i class="fas fa-chevron-down"></i></a></strong
                         >
                         <ul class="service__list">
                             <li><a href="#none">ESG</a></li>
@@ -646,7 +651,7 @@
                     </div>
                     <div class="service-wrap">
                         <strong class="service__title"
-                            ><a href="#none">투자정보</a></strong
+                            ><a href="#none">투자정보<i class="fas fa-chevron-down"></i></a></strong
                         >
                         <ul class="service__list">
                             <li><a href="#none">기업지배구조</a></li>
@@ -660,7 +665,7 @@
                     <div class="service-wrap">
                         <div>
                             <strong class="service__title"
-                                ><a href="#none">고객센터</a></strong
+                                ><a href="#none">고객센터<i class="fas fa-chevron-down"></i></a></strong
                             >
                             <ul class="service__list">
                                 <li>

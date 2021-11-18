@@ -38,7 +38,15 @@
 }
 
 /* Header */
-/* .header-top {} */
+.header-top {
+    width: 100vw;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
 .gnb {
     width: 1296px;
     height: 73px;
@@ -74,6 +82,11 @@
 .utils button img {
     width: 20px;
     height: 20px;
+}
+
+.utils__hamburger {
+    display: none;
+    font-size: 24px;
 }
 
 /* Main */
@@ -170,7 +183,7 @@
 }
 .content--sticky {
     position: sticky;
-    top: 0;
+    top: 109px;
 }
 
 .content__info {
@@ -343,6 +356,9 @@
     line-height: 62px;
     font-weight: bold;
 }
+.culture__title .break-line {
+    display: none;
+}
 .culture__link {
     display: block;
     width: 177px;
@@ -424,12 +440,6 @@
     background-size: 160px 160px;
     background-position: 95% 80%;
 }
-/* .etc-link--service::after {
-    content: "";
-    display: block;
-    width: 160px;
-    height: 160px;
-} */
 .etc-link--recruit {
     background-color: #3c64ff;
     background-image: url(../asset/icon/User_perspective_matte.png);
@@ -437,7 +447,6 @@
     background-size: 160px 160px;
     background-position: 95% 80%;
 }
-
 .etc-link__tit {
     display: block;
     max-width: 480px;
@@ -556,20 +565,20 @@
 .relation-wrap:first-child {
     margin-left: 0;
 }
-.relation-wrap--em{
+.relation-wrap--em {
     font-weight: bold;
     color: #333333;
 }
-.relation-wrap .fa-chevron-down{
+.relation-wrap .fa-chevron-down {
     font-size: 9px;
     vertical-align: 1px;
     color: #888888;
     margin-left: 4px;
 }
-.relation-wrap:hover{
+.relation-wrap:hover {
     color: #111111;
 }
-.relation-wrap:hover .fa-chevron-down{
+.relation-wrap:hover .fa-chevron-down {
     color: #111111;
     transform: rotate(180deg);
 }

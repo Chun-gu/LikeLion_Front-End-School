@@ -1,2 +1,225 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .gnb {
+        width: 630px;
+    }
+    .gnb nav {
+        display: none;
+    }
+
+    .utils__eng,
+    .utils__theme {
+        display: none;
+    }
+    .utils__hamburger {
+        display: inline-block;
+    }
+
+    .utils button:hover {
+        background-color: transparent;
+    }
+
+    .container {
+        border: none;
+    }
+
+    .main-title {
+        width: 630px;
+        padding: 108px 0 0;
+        margin: 0 auto 54px;
+    }
+    .main-title__txt {
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: -1px;
+    }
+    .main-title strong {
+        line-height: 40px;
+    }
+    .main-title strong::before {
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
+        vertical-align: -7px;
+    }
+
+    .main-content {
+        width: 630px;
+        padding-bottom: 344px;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .content-section {
+        height: 100%;
+        flex-direction: column;
+        /* margin: 0 auto; */
+        align-items: center;
+    }
+    .content-wrap {
+        width: 660px;
+        height: 100%;
+        padding: 0 15px;
+    }
+    .content-wrap--long {
+        height: 100%;
+    }
+    .content-wrap--multi {
+        width: 660px;
+        height: 912px;
+        margin-top: 30px;
+    }
+    .content-wrap--multi.content-wrap--long {
+        height: 1140px;
+    }
+    .content--sticky {
+        position: relative;
+        top: auto;
+    }
+
+    .culture {
+        width: 630px;
+        height: 720px;
+        padding: 48px 52px;
+        margin: 36px auto;
+    }
+    .culture__title {
+        display: block;
+        font-size: 36px;
+        line-height: 52px;
+        font-weight: bold;
+    }
+    .culture__title .break-line {
+        display: inline-block;
+    }
+    .culture__link {
+        display: block;
+        width: 177px;
+        font-size: 14px;
+        line-height: 21px;
+        color: #ffffff;
+        background-color: black;
+        padding: 9px 20px;
+        margin: 0 auto;
+        border-radius: 42px;
+    }
+    .culture__img {
+        width: 420px;
+        height: 420px;
+        margin: 0 auto;
+    }
+
+    .etc-section {
+        display: flex;
+        width: 627px;
+        margin: 36px auto;
+        flex-wrap: wrap;
+    }
+    .etc-wrap {
+        display: inline-block;
+        width: 627px;
+        padding: 0;
+    }
+    .etc-link {
+        display: block;
+        width: 627px;
+        height: 360px;
+        font-size: 32px;
+        line-height: 44px;
+        font-weight: bold;
+        padding: 36px;
+        border-radius: 12px;
+        box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+    }
+    .etc-link--service {
+        margin-bottom: 36px;
+    }
+
+    .collection-link {
+        width: 220px;
+        font-size: 16px;
+        line-height: 50px;
+    }
+
+    .link-top {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+        bottom: 38px;
+        right: 50%;
+        transform: translate(50%, 50%);
+    }
+
+    .footer-wrap {
+        width: 630px;
+        height: 100%;
+        padding: 0 0 48px;
+        margin: 0 auto;
+    }
+
+    .service::after {
+        content: none;
+    }
+    .service-wrap {
+        width: 100%;
+        float: none;
+    }
+    .service__title {
+        display: block;
+        width: 100%;
+        padding: 13px 0 15px;
+        border-bottom: 1px solid #eeeeee;
+        margin: 0;
+    }
+    .service__title a {
+        display: block;
+    }
+    .service__title a:hover::before {
+        content: none;
+    }
+    .service__title i {
+        font-size: 14px;
+        color: #888888;
+        float: right;
+        margin: 3px;
+    }
+    .service__title .fa-arrow-top-right {
+        font-size: 16px;
+    }
+    .service__title:hover .fa-arrow-top-right {
+        color: #000000;
+    }
+    .service__list {
+        display: none;
+    }
+
+    .relation {
+        margin-top: 45px;
+    }
+    .relation::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .relation__info {
+        display: block;
+        width: 630px;
+        height: 100%;
+        float: none;
+    }
+    .relation-wrap {
+        display: inline-block;
+        width: 313px;
+        margin: 15px 0 0;
+        float: none;
+    }
+    .relation__site {
+        width: 297px;
+        margin-top: 58px;
+    }
+    .copyright {
+        display: block;
+        width: 211px;
+        margin-top: -30px;
+        float: left;
+    }
 }

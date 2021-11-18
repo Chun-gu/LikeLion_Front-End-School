@@ -1,2 +1,106 @@
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .gnb {
+        width: 952px;
+    }
+
+    .main-title {
+        width: 952px;
+        padding: 144px 0 0;
+        margin: 0 auto 72px;
+    }
+    .main-title__txt {
+        font-size: 36px;
+        line-height: 52px;
+        letter-spacing: -3px;
+    }
+    .main-title strong {
+        line-height: 52px;
+    }
+    .main-title strong::before {
+        width: 52px;
+        height: 52px;
+        background-size: 52px;
+    }
+
+    .main-content {
+        width: 982px;
+        padding-bottom: 172px;
+    }
+
+    .content-section {
+        height: 100%;
+    }
+    .content-wrap {
+        width: 655px;
+        height: 1788px;
+        padding: 0 15px;
+    }
+    .content-wrap--long {
+        height: 2244px;
+    }
+    .content-wrap--multi {
+        width: 327px;
+        height: 100%;
+        gap: 36px;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+    }
+
+    .culture {
+        width: 952px;
+        height: 540px;
+        padding: 54px 66px;
+        margin: 30px 15px;
+        text-align: center;
+    }
+    .culture__img {
+        width: 820px;
+        height: 239px;
+        object-fit: cover;
+        object-position: center;
+        margin: 50px auto;
+    }
+
+    .etc-section {
+        display: flex;
+        width: 982px;
+        margin-top: 36px;
+    }
+    .etc-wrap {
+        display: inline-block;
+        width: 491px;
+        padding: 0 18px;
+    }
+    .etc-link {
+        display: block;
+        width: 458px;
+        height: 360px;
+        font-size: 32px;
+        line-height: 44px;
+        font-weight: bold;
+        padding: 36px;
+        border-radius: 12px;
+        box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+    }
+
+    .footer-wrap {
+        width: 952px;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 0 48px;
+        margin: 0 auto;
+    }
+
+    .relation__info {
+        width: 532px;
+    }
+
+    .relation-wrap:nth-child(6) {
+        margin-left: 0;
+    }
+
+    .copyright {
+        padding-top: 12px;
+    }
 }
