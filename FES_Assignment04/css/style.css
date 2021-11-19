@@ -1,18 +1,28 @@
+@charset "utf-8";
+
 @font-face {
-    font-family: "spoqa400";
-    src: url(../fonts/SpoqaHanSansNeo-Regular.ttf);
+    font-family: "spoqa";
+    src: url(../fonts/SpoqaHanSansNeo-Regular.ttf) format("woff");
+    font-weight: 400;
 }
 @font-face {
-    font-family: "spoqa500";
-    src: url(../fonts/SpoqaHanSansNeo-Medium.ttf);
+    font-family: "spoqa";
+    src: url(../fonts/SpoqaHanSansNeo-Medium.ttf) format("woff");
+    font-weight: 500;
 }
 @font-face {
-    font-family: "spoqa700";
-    src: url(../fonts/SpoqaHanSansNeo-Bold.ttf);
+    font-family: "spoqa";
+    src: url(../fonts/SpoqaHanSansNeo-Bold.ttf) format("woff");
+    font-weight: 700;
 }
 
 body {
-    font-family: "Spoqa400", sans-serif;
+    height: 100vh;
+    font-family: "Spoqa", sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Utils */
@@ -25,30 +35,65 @@ body {
     text-indent: -9999px;
 }
 
-.wrap {
+/* login-box */
+.login-box {
+    width: 500px;
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+}
+.login-box__logo {
+    display: inline-block;
+    width: 138px;
+    margin-bottom: 28px;
+}
+.login-box__txt {
+    line-height: 20px;
+    margin-bottom: 32px;
+}
+.btn-login {
+    width: 440px;
+    height: 60px;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #2f80ed;
+    border-radius: 5px;
+}
+
+/* modal */
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+}
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-login {
     width: 520px;
     border: 1px solid #c4c4c4;
     border-radius: 10px;
+    background-color: white;
+    position: relative;
 }
 
 .header {
     padding: 20px 24px 20px;
     border-bottom: 1px solid #c4c4c4;
-    font-family: "spoqa500";
+    font-weight: 500;
     line-height: 20px;
     text-align: center;
-    position: relative;
-}
-
-.header__btn-close {
-    position: absolute;
-    top: 20px;
-    right: 24px;
-}
-
-.header__btn-close img {
-    width: 16px;
-    height: 16px;
 }
 
 .content {
@@ -57,8 +102,8 @@ body {
 
 .content__title {
     display: block;
-    font-family: "spoqa700";
     font-size: 20px;
+    font-weight: 700;
     line-height: 24px;
     margin-bottom: 24px;
 }
@@ -66,29 +111,33 @@ body {
 .form-login__input-id,
 .form-login__input-password {
     display: block;
-    width: 438px;
+    width: 472px;
     height: 50px;
+    font-weight: 500;
     padding: 0 16px;
     margin-bottom: 10px;
     border: 1px solid #c4c4c4;
     border-radius: 5px;
-    font-family: "spoqa500";
 }
 
 :is(.form-login__input-id, .form-login__input-password)::placeholder {
-    font-family: "spoqa400";
+    font-weight: 500;
     color: #767676;
     line-height: 20px;
 }
 
 .form-login__checkbox-keepLoggedIn {
-    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: -1px;
 }
 
 .form-login__checkbox-keepLoggedIn + label {
-    font-family: "spoqa500";
+    font-weight: 500;
     line-height: 20px;
     color: #767676;
+    padding: 2px 6px 2px 0;
     cursor: pointer;
 }
 
@@ -102,7 +151,10 @@ body {
     vertical-align: -6px;
     margin: 0 8px 0 4px;
 }
-
+.form-login__checkbox-keepLoggedIn:focus + label {
+    outline: 2px solid black;
+    border-radius: 5px;
+}
 .form-login__checkbox-keepLoggedIn:checked + label::before {
     background: url(../images/checked-box.png);
     width: 22px;
@@ -115,7 +167,7 @@ body {
     height: 50px;
     background: #2f80ed;
     border-radius: 5px;
-    font-family: "spoqa700";
+    font-weight: 700;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
@@ -138,7 +190,7 @@ body {
     height: 16px;
     vertical-align: middle;
     background: #767676;
-    margin: 0 8px 0 12px;
+    margin: 0 8px 2px 12px;
 }
 
 .alter {
@@ -153,7 +205,7 @@ body {
 .alter::after {
     content: "";
     display: inline-block;
-    width: 210px;
+    width: 209px;
     height: 1px;
     background: #767676;
     vertical-align: 30%;
@@ -169,7 +221,7 @@ body {
     align-items: center;
     width: 472px;
     height: 50px;
-    font-family: "spoqa500";
+    font-weight: 500;
     line-height: 20px;
     text-align: center;
     vertical-align: middle;
@@ -201,4 +253,17 @@ body {
 
 .social-login__kakaotalk {
     border: 1px solid #f2c94c;
+}
+
+.btn-close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    padding: 0;
+}
+
+.btn-close img {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
 }
