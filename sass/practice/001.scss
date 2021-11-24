@@ -1,0 +1,23 @@
+// 한 줄 주석은 css로 컴파일 되면 사라진다.
+/* 여러줄 주석은 사라지지 않는다. */
+
+ul {
+    list-style: none;
+    li {
+        color: red;
+        font-size: 20px;
+    }
+}
+
+.one {
+    color: red;
+    .two {
+        color: green;
+        .three {
+            font-size: 20px;
+        }
+        .four {
+            font-size: 30px;
+        }
+    }
+}

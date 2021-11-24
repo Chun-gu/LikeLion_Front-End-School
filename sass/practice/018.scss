@@ -1,0 +1,15 @@
+@mixin getFontSize($x: 10, $y: 3) {
+    font-size: $x * $y + px;
+}
+.one {
+    @include getFontSize;
+}
+.two {
+    @include getFontSize(20);
+}
+.three {
+    @include getFontSize(3, 3);
+}
+.four {
+    @include getFontSize($y: 10);
+}

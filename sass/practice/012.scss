@@ -1,0 +1,6 @@
+$var1: 20px;
+$var2: 4px;
+
+div {
+    font-size: ($var1/$var2) + px;
+}

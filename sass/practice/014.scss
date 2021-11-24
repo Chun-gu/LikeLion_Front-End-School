@@ -1,0 +1,30 @@
+// .card {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: gray;
+// }
+
+// .aside {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: white;
+// }
+
+// .card와 .aside의 겹치는 속성을 @mixin에 넣는다.
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// @include로 넣어준다.
+.card {
+    @include flex-center;
+    background: gray;
+}
+
+.aside {
+    @include flex-center;
+    background: white;
+}
