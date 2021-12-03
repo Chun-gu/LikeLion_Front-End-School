@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="lotto.js"></script>
+        <title>로또번호생성기</title>
+    </head>
+    <body>
+        <h1>인생 한방 가즈아!!!</h1>
+        <form>
+            <label for="게임수">몇 겜 하실?</label>
+            <input type="number" id="게임수" min="1" max="100" value="1" />겜
+            <small
+                >주의! 한 번에 구매 가능한 금액은 최대 10만원이므로 최대 100게임
+                가능</small
+            >
+            <button id="뽑기">누르기 전 기도 3초</button>
+        </form>
+        <section>
+            <ul id="결과목록"></ul>
+        </section>
+    </body>
+</html>
