@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <title>Ajax 테스트</title>
+    </head>
+    <body>
+        <input type="text" id="id" required />
+        <input type="password" id="pw" required />
+        <button type="button" id="login">로그인</button>
+
+        <div class="inputUserData">입력한 값</div>
+        <div class="dataField">데이터</div>
+
+        <script>
+            const userData;
+            function success(userDataParams){
+                document.write(userDataParams)
+            }
+            function fail(){
+                document.write('fail');
+            }
+            $("#login").click(function () {
+                $.ajax({
+                    url: "https://raw.githubusercontent.com/Chun-gu/ajaxLoginTest/main/userdata.json",
+                    async: true,
+                    success: function (response) {
+                        let id = $("#id").val();
+                        let pw = $("#pw").val();
+                        response = JSON.parse(response);
+                        userData = response
+                            .find(user=>user.id ===id&& user.pw===pw);
+                            if(userDate){
+                                success(userData);
+                            }
+                            else{
+                                fail();
+                            }
+                    },
+                });
+                $(".inputUserData").html(id + "  " + pw);
+            });
+        </script>
+    </body>
+</html>
